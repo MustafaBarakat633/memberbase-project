@@ -4,29 +4,42 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Memberbase</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon" />
   </head>
   <body>
     <header>
       <div class="limit-width">
-        <a href="#" class="logo"
+        <a href="#" class="logo" data-aos="fade-right"
           ><img src="images/logo.svg" alt="Memberbase Home Page"
         /></a>
-        <button class="hamburger-icon-btn"></button>
+        <button class="hamburger-icon-btn" data-aos="fade-left"></button>
         <nav>
           <form
             action="https://www.google.com/search"
             method="get"
             target="_blank"
             class="search-box"
+            data-aos="fade-down"
+            data-aos-delay="100"
           >
             <input type="search" placeholder="Search resources" name="q" />
           </form>
           <ul class="links">
-            <li><a href="#">All Resources</a></li>
-            <li><a href="#">Log in</a></li>
-            <li><a href="#">Free Sign Up</a></li>
+            <li>
+              <a href="#" data-aos="fade-up" data-aos-delay="200"
+                >All Resources</a
+              >
+            </li>
+            <li>
+              <a href="#" data-aos="fade-up" data-aos-delay="300">Log in</a>
+            </li>
+            <li>
+              <a href="#" data-aos="fade-left" data-aos-delay="400"
+                >Free Sign Up</a
+              >
+            </li>
           </ul>
         </nav>
       </div>
@@ -35,28 +48,37 @@
     <section id="hero-section">
       <div class="limit-width">
         <div class="text-info">
-          <h1>Access a library of free design resources</h1>
-          <p>
+          <h1 data-aos="fade-right" data-aos-delay="500">
+            Access a library of free design resources
+          </h1>
+          <p data-aos="fade-right" data-aos-delay="600">
             The best resources and books from around the web, collected and
             curated for your reading.
           </p>
-          <a href="#" class="login-btn">Get Access Now</a>
+          <div data-aos="fade-right" data-aos-delay="700">
+            <a href="#" class="login-btn">Get Access Now</a>
+          </div>
         </div>
         <div class="image-div">
-          <img src="images/hero-section-image.svg" alt="" />
+          <img
+            src="images/hero-section-image.svg"
+            alt=""
+            data-aos="zoom-in"
+            data-aos-delay="500"
+          />
         </div>
       </div>
     </section>
 
     <section id="resources-section">
       <div class="limit-width">
-        <div class="section-top">
+        <div class="section-top" data-aos="fade-down">
           <h2>Featured Resources</h2>
           <a href="#">See All Resources</a>
         </div>
 
         <div class="resources-grid">
-          <div class="res-card">
+          <div class="res-card" data-aos="zoom-in">
             <a href="#">
               <img src="images/card1-image.svg" alt="" />
             </a>
@@ -72,7 +94,7 @@
             </a>
           </div>
 
-          <div class="res-card">
+          <div class="res-card" data-aos="zoom-in">
             <a href="#">
               <img src="images/card2-image.svg" alt="" />
             </a>
@@ -86,7 +108,7 @@
             </a>
           </div>
 
-          <div class="res-card">
+          <div class="res-card" data-aos="zoom-in">
             <a href="#">
               <img src="images/card3-image.svg" alt="" />
             </a>
@@ -101,7 +123,7 @@
             </a>
           </div>
 
-          <div class="res-card">
+          <div class="res-card" data-aos="zoom-in">
             <a href="#">
               <img src="images/card4-image.svg" alt="" />
             </a>
@@ -116,7 +138,7 @@
             </a>
           </div>
 
-          <div class="res-card">
+          <div class="res-card" data-aos="zoom-in">
             <a href="#">
               <img src="images/card5-image.svg" alt="" />
             </a>
@@ -132,7 +154,7 @@
             </a>
           </div>
         </div>
-        <div class="section-bottom">
+        <div class="section-bottom" data-aos="fade-up">
           <a href="#">See All Resources</a>
         </div>
       </div>
@@ -141,12 +163,12 @@
     <section id="subscribe-section">
       <div class="limit-width">
         <div class="inner-limit-width">
-          <h2>Get more great resources</h2>
-          <p>
+          <h2 data-aos="fade-right">Get more great resources</h2>
+          <p data-aos="fade-left">
             Get the latest design resources from across the web. Straight to
             your inbox.
           </p>
-          <form action="">
+          <form action="" data-aos="fade-up">
             <input type="email" name="email" placeholder="Enter your email" />
             <input type="submit" value="Subscribe" />
           </form>
@@ -156,7 +178,7 @@
 
     <footer>
       <div class="limit-width">
-        <div class="grid-item">
+        <div class="grid-item" data-aos="fade-right">
           <img src="images/logo.svg" alt="" />
           <a href="https://memberbase-template.webflow.io/" target="_blank"
             >Memberbase original website</a
@@ -171,7 +193,7 @@
           </p>
           <p>&copy; <span id="year"></span> Memberbase.</p>
         </div>
-        <div class="grid-item">
+        <div class="grid-item" data-aos="fade-left">
           <p>website</p>
           <a href="#">Home</a>
           <a href="#">Resources</a>
@@ -180,14 +202,14 @@
           <a href="#">Terms & Conditions</a>
           <a href="#">Privacy Policy</a>
         </div>
-        <div class="grid-item">
+        <div class="grid-item" data-aos="fade-right">
           <p>membership</p>
           <a href="#">Sign In</a>
           <a href="#">Sign Up</a>
           <a href="#">User Account</a>
           <a href="#">Reset Password</a>
         </div>
-        <div class="grid-item">
+        <div class="grid-item" data-aos="fade-left">
           <p>admin</p>
           <a href="#">Style Guide</a>
           <a href="#">Licenses</a>
@@ -199,5 +221,9 @@
     </footer>
 
     <script src="scripts/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

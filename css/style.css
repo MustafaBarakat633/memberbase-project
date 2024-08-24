@@ -112,6 +112,7 @@ header nav {
   justify-content: space-between;
   align-items: center;
   overflow: auto;
+  overflow: hidden;
 }
 
 header nav form {
@@ -276,7 +277,6 @@ header nav ul.links li:last-child a:hover {
 #hero-section .text-info p {
   font-size: 20px;
   line-height: 1.5em;
-  opacity: 0.9;
   margin-top: 18px;
   margin-bottom: 30px;
 }
@@ -445,6 +445,7 @@ header nav ul.links li:last-child a:hover {
     );
   color: #fff;
   text-align: center;
+  overflow: hidden;
 }
 
 #subscribe-section .inner-limit-width {
@@ -529,6 +530,7 @@ footer {
   background-color: #f5f6f7;
   padding-top: 80px;
   padding-bottom: 80px;
+  overflow: hidden;
 }
 
 footer .limit-width {
